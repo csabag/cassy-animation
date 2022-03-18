@@ -42,8 +42,8 @@ function drawScreen(canvas_id)
       let c = Math.sin((k-30)/50)+0.0;
       ctx.fillStyle = `rgba(255, 255, 255,${c})`;
       ctx.fillRect(
-        canvas.width/2 + x * 50 + delta+delta2+delta3,
-        canvas.height/2 + y * 50 + delta+delta2+delta3,
+        canvas.width/2 + (x * Math.max(canvas.width/10, 30) + delta+delta2+delta3)/1.5,
+        canvas.height/2 + (y * Math.max(canvas.width/10, 30) + delta+delta2+delta3)/1.5,
         (2*Math.sin(inc/2)+8)/2, Math.sin(inc/3)+2);
     }
   }
