@@ -1,7 +1,7 @@
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
-  <h1>Coming soon...</h1>
+  <h1>Coming soon..</h1>
   <canvas id="main-canvas"></canvas>
 `
 var animation_delay = 10;
